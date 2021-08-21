@@ -1,0 +1,128 @@
+package com.amazon.oih.es.fba.ruleengine.fe
+dialect "mvel"
+activation-group "fba"
+no-loop
+
+import com.amazon.oih.es.fba.ruleengine.entity.FilterLogicContext
+import com.amazon.oih.es.fba.ruleengine.constants.ActionType
+import com.amazon.oih.es.fba.ruleengine.util.DroolsUtils
+import com.amazon.oih.es.fba.ruleengine.util.ICPActionUtils
+import org.slf4j.Logger
+
+global Logger log
+global ICPActionUtils icpActionUtils
+
+rule "has quality alert"
+    salience 90
+  when
+    $c : FilterLogicContext(qualityAlert==true)
+  then
+    log.debug('has quality alert ({})', System.identityHashCode($c))
+    icpActionUtils.setActionType($c, ActionType.EditListing)
+end
+
+
+rule "RemovalOrder"
+    salience 85
+  when
+    $c : FilterLogicContext()
+    eval (icpActionUtils.shouldShowCreateRemovalActionOIH($c))
+  then
+    log.debug('RemovalOrder ({})', System.identityHashCode($c))
+    icpActionUtils.setActionType($c, ActionType.RemovalOrder)
+end
+
+
+rule "has no unheathy qty"
+    salience 80
+  when
+    $c : FilterLogicContext(qualityAlert==false)
+    eval (icpActionUtils.isUnhealthyQuantityLE0($c))
+  then
+    log.debug('has no unheathy qty ({})', System.identityHashCode($c))
+    icpActionUtils.setActionType($c, ActionType.ImproveEconomicInputs)
+end
+
+rule "get outlet eligibility input"
+    salience 76
+    no-loop
+  when
+    $c : FilterLogicContext()
+    eval (icpActionUtils.shouldCheckOutletEligibility($c))
+  then
+    icpActionUtils.doOutletEligibleCheckAsync($c)
+end
+
+
+rule "check outlet eligibility"
+    salience 75
+    no-loop
+  when
+    $c : FilterLogicContext(
+    averagePrice != null, customerAverageReviewRating !=null, sellerRating != null, gl != null, unitsShipped != null,
+    unitsShipped > 1,
+    totalQuantity >= 10,
+    markdownPrice < (0.8 * averagePrice) || markdownPrice < (0.8 * totalBuyboxPrice),
+    customerAverageReviewRating >= 3.0 || customerAverageReviewRating == 0.0,
+    sellerRating > 3.5,
+    safe)
+    eval (icpActionUtils.shouldShowCreateSaleAction($c))
+  then
+    icpActionUtils.setActionType($c, ActionType.OutletDeal)
+end
+
+
+rule "is deadwood"
+    salience 50
+  when
+    $c : FilterLogicContext(deadwood==true)
+    eval (icpActionUtils.shouldShowCreateSaleAction($c))
+  then
+    log.debug('is deadwood ({})', System.identityHashCode($c))
+    icpActionUtils.setActionType($c, ActionType.CreateASale)
+end
+
+
+rule "not low traffic"
+    salience 40
+  when
+      $c : FilterLogicContext(lowTraffic==false)
+      eval (icpActionUtils.shouldShowCreateSaleAction($c))
+  then
+    log.debug('not low traffic ({})', System.identityHashCode($c))
+    icpActionUtils.setActionType($c, ActionType.CreateASale)
+end
+
+
+rule "over buybox"
+    salience 30
+  when
+    $c : FilterLogicContext(lowTraffic)
+    eval (icpActionUtils.shouldShowCreateSaleAction($c))
+    not (eval (icpActionUtils.isWithinPriceInBuyboxThreshold($c)))
+  then
+    log.debug('over buybox ({})', System.identityHashCode($c))
+    icpActionUtils.setActionType($c, ActionType.CreateASale)
+end
+
+
+rule "Improve keywords"
+    salience 10
+  when
+    $c : FilterLogicContext(deadwood==false, lowTraffic==true)
+    eval (icpActionUtils.shouldShowCreateSaleAction($c))
+    eval (icpActionUtils.isWithinPriceInBuyboxThreshold($c))
+  then
+    log.debug('Improve keywords ({})', System.identityHashCode($c))
+    icpActionUtils.setActionType($c, ActionType.ImproveKeywords)
+end
+
+
+rule "Unknown"
+salience 0
+  when
+    $c : FilterLogicContext(actionType==null)
+  then
+    log.debug('Unknown ({})', System.identityHashCode($c))
+    icpActionUtils.setActionType($c, ActionType.Unknown)
+end

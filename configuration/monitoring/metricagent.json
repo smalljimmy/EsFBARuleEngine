@@ -1,0 +1,8 @@
+{
+  "Streams": [
+    {
+      "monitorFileName": "service_log",
+      "rotateMinutes": "1"
+    }
+  ]
+}

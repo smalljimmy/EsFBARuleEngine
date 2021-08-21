@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="2" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-version -Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi -Xuse-experimental=kotlinx.coroutines.ObsoleteCoroutinesApi" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="jvmTarget" value="1.8" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/build/private/scala-2.12/classes/library" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tst" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/annotation-generated-src" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/annotation-generated-tst" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="LibRoot: build-private-classes-generated">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../build/EsFBARuleEngine/EsFBARuleEngine-1.0/RHEL5_64/DEV.STD.PTHREAD/build/private/classes/generated" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-io-kotlintest_kotlintest-runner-junit5-3.x.1549.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-io-kotlintest_kotlintest-runner-jvm-3.x.1246.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-io-arrow-kt_arrow-core-0.8.x.103.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-io-arrow-kt_arrow-annotations-0.8.x.102.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-io-github-classgraph_classgraph-4.x.78.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-io-kindedj_kindedj-1.x.251.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-io-kotlintest_kotlintest-core-3.x.1180.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-io-kotlintest_kotlintest-assertions-3.x.1301.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-com-github-wumpz_diffutils-2.x.466.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-io-kotlintest_kotlintest-extensions-3.x.1043.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-commons-io_commons-io-2.6.186.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-eclipse-jgit_org-eclipse-jgit-4.5.x.200240.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-com-googlecode-javaewah_Java-EWAH-0.7.x.200234.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-com-jcraft_jsch-0.1.x.200236.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-junit-jupiter_junit-jupiter-engine-5.x.223002.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-junit-jupiter_junit-jupiter-params-5.x.222964.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-junit-jupiter_junit-jupiter-api-5.x.223144.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-junit-platform_junit-platform-console-1.x.222729.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-junit-platform_junit-platform-reporting-1.x.4063.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-junit-platform_junit-platform-launcher-1.x.222690.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-junit-platform_junit-platform-engine-1.x.222692.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-junit-platform_junit-platform-commons-1.x.222822.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-junit-platform_junit-platform-suite-api-1.x.201513.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-apiguardian_apiguardian-api-1.x.219384.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-opentest4j_opentest4j-1.x.220364.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Maven-org-slf4j_slf4j-api-1.7.x.205873.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: MockK-1.9.x.4787.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: MockK-agent-jvm-1.9.x.4374.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Byte-buddy-1.9.x.2845.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Byte-buddy-agent-1.9.x.2933.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: MockK-agent-common-1.9.x.4321.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: MockK-agent-api-1.9.x.4273.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: MockK-common-1.9.x.4282.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: MockK-dsl-jvm-1.9.x.4677.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: MockK-dsl-1.9.x.4427.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Objenesis-2.6.207710.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Univocity-Parsers-2.7.x.2189.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: junit-4.12.260368.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="BlackCaiman: Hamcrest-1.3.255536.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AWSCloudWatchJavaClient-1.11.x.329406.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AWSRequestSigningInterceptor-1.0.218713.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AWSJavaClientRuntime-1.11.x.343384.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AWSJavaClientJmxSPI-1.11.x.301645.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AWSJavaClientSigners-1.11.x.310116.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AWSJavaClientCore-1.11.x.309448.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AWSJavaClientRuntimeConfigOverride-1.11.x.227736.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AmazonAPIJavaClient-1.3.225146.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AmazonAPIJavaClientCommonTypes-1.0.17415.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AmazonAPIJavaClientMAWSSupport-1.0.1835.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AmazonAPIJavaClientCommon-1.1.217221.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AmazonAPIJavaClientDependencies-1.0.215890.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Apache-HttpComponents-HttpCore5-5.0.x.8809.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AxiomServiceJavaClient-2.0.206850.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralAAASupport-2.0.269406.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AAASecurityDaemonJavaClient-1.0.280981.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AAAJavaCommons-1.0.228948.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AaaJavaEnvironmentRootProvider-1.0.220716.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AaaServiceJavaClientFromAAAServiceModelGeneratedCode-1.0.308508.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AmazonApolloEnvironmentInfoJava-1.0.247146.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AuthJava-1.0.239259.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralAAAOrchestration-1.0.301471.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralBatchingSupport-1.0.321425.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClientHttp-1.0.340335.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClientNetty-1.0.332470.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClientNetty4-1.0.336845.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClientCnameSupport-1.0.233651.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClientHttpSupport-1.0.315931.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AmazonCACertsJava-1.0.201098.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClientHttpConfig-1.0.237155.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AmazonSSLCiphers-1.0_JDK1.6.240662.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AmazonSSLVisitors-1.0.236393.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralMetricsQuerylogReporter-1.1.237835.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralMetricsReporter-1.1.236950.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralRpcSupport-1.0.339138.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClient-1.0.337150.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralCompressionEngine-1.0.244195.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralEnvelope-1.0.311974.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralGATCallVisitor-1.0.238688.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralGATCallVisitorStorage-1.0.234416.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralJsonSupport-1.0.338666.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralRetry-2.0.217448.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralJdkHelpers-2.0.216737.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralService-1.0.344974.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralContinuationOrchestrator-1.0.329812.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralSecurity-1.0.234096.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralSerialize-1.0.312779.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralQueryStringValue-1.0.238567.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralValidate-1.0.334370.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: DittoCoralSupport-1.0.324011.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClientConfig-1.0.253672.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralConfig-1.0.254734.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralOrchestrator-1.0.329210.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralActivity-1.0.330551.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralCachingSupport-1.0.322856.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralCacheValue-1.0.316242.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClientOrchestration-1.0.320857.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralContinuationSupport-1.0.322381.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralHttpSupport-1.0.322690.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralCore-1.0.322525.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClientCall-1.0.239621.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralHandler-1.0.253458.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralIdentity-1.0.236047.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralTransmutingProxySupport-1.0.318722.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralClientExceptions-1.0.310826.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralModeledExceptions-1.0.311893.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralTransmutingProxy-1.0.320239.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralAttributes-1.0.233886.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralMetrics-1.0.246644.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralTransmute-1.0.319684.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralGenericValue-1.0.315677.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralBeanValue-1.0.315414.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralEnvelopeCore-1.0.314867.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralGrammar-1.0.249185.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralJsonValue-1.0.248092.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralSerializeCore-1.0.314103.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralGeneric-1.0.251892.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralGenericInterface-1.0.251311.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralEnvelopeInterface-1.0.251255.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralBuffer-1.0.252595.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralSchema-1.0.251149.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralModel-1.0.271147.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralAnnotation-1.0.263206.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralReflect-1.0.251995.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralReflectAsm-1.0.246960.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralTibcoValue-1.0.240565.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralXmlValue-1.0.239972.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralUtil-1.0.258065.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralValue-1.0.238439.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: CoralCommons-1.0.255519.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: DittoSerializeJava-1.0.236719.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: DittoSerializeJavaInterface-1.0.231100.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Drools-runtime-6.1.0.200293.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: FindBugsAnnotations-2.0.3.209564.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: GuiceAppConfig-1.1.212669.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AmazonAppConfigJava-2.0.228959.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: GoogleGuice-4.x.235059.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AOPAlliance-1.0.237587.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JMESPathJava-1.0.228886.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JUnixSocket-2.0.4.236491.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Jackson-module-kotlin-2.9.x.203399.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JakartaCommons-httpclient-3.0.238959.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Janino-2.5.15.244814.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JavaCacheAPI-1.0.236791.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Jcip-1.0.204452.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: KotlinReflect-1.3.x.964.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: KotlinxCoroutinesJdk8-1.3.x.367.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: KotlinxCoroutinesCore-1.3.x.390.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: KotlinStdlib-1.3.x.1100.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: KotlinStdlibCommon-1.3.x.990.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-eclipse-jdt-core-compiler_ecj-4.x.201822.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-elasticsearch-client_elasticsearch-rest-high-level-client-7.1.1.146.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-elasticsearch-client_elasticsearch-rest-client-7.1.1.68.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Apache-HttpComponents-HttpAsyncClient-4.1.x.219882.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Apache-HttpComponents-HttpClient-4.5.x.251494.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Apache-HttpComponents-HttpCore-4.4.x.243964.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JakartaCommons-cli-1.2.253312.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-elasticsearch-plugin_aggs-matrix-stats-client-7.1.1.19.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-elasticsearch-plugin_lang-mustache-client-7.1.1.48.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-elasticsearch-plugin_parent-join-client-7.1.1.19.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-elasticsearch-plugin_rank-eval-client-7.1.1.30.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-elasticsearch_elasticsearch-7.1.1.150.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: HPPC-0.7.x.202491.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: HdrHistogram-2.1.x.203067.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JNA-4.2.207302.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JOpt-Simple-5.x.205101.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JTS-1.15.x.447.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Jackson-dataformat-cbor-2.8.x.206878.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Jackson-dataformat-smile-2.8.x.202762.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Jackson-dataformat-yaml-2.8.x.238314.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Jackson-databind-2.8.x.242514.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Jackson-annotations-2.8.x.236206.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Jackson-core-2.8.x.236155.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Log4j-1_2-api-2.8.228678.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Log4j-core-2.8.248383.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-glassfish_javax_json-1.x.202692.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Javax-json-api-1.x.204375.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-jetbrains_annotations-13.x.202453.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-scijava_native-lib-loader-2.x.235160.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-software-amazon-ion_ion-java-1.x.222917.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: MustacheJava-0.9.2.226166.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: GoogleGuava-r17.242860.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AtInject-1.0.247499.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Jackson-mapper-1.9.244622.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Jackson-1.9.244126.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Joda-time-2.x.243026.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: OSGiCore-4.3.1.231863.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: OdinAWSCredentials-1.5.239483.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: AWSJavaCredentialInterfaces-1.0.316807.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: OdinAWSBaseUtils-1.2.209436.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JakartaCommons-logging-adapters-1.1.254633.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JakartaCommons-logging-api-1.1.254083.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: OdinLocalRetriever-1.1.230720.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JakartaCommons-codec-1.5.232731.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: JakartaCommons-lang-2.6.211115.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Json-org-java-2.3.234193.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: RendezvousJava-7.5.214446.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: RxJava2-2.x.203190.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Maven-org-reactivestreams_reactive-streams-1.x.211636.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Slf4j-1.6.1.230226.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Slf4j_log4j-1.6.1.213864.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: SnakeYAML-1.16.229996.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Spatial4J-0.6.201798.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: SpicyBuffers-1.0.237623.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: SpicyUtil-1.0.236029.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Sun-JSR-275-0.4.0.239343.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Sun-JSR-305-0.1.204513.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: T-digest-3.0.x.203014.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: XStream-1.4.5.200631.0" level="project" />
+    <orderEntry type="library" name="BlackCaiman: Log4j-api-2.x.233234.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="BlackCaiman: AmazonCACerts-1.0.261979.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="BlackCaiman: DittoCoralJsonSupport-1.0.336017.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="BlackCaiman: SpicyJson-1.0.238463.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="BlackCaiman: Disruptor-3.3.x.226593.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="BlackCaiman: Jackson-dataformat-xml-2.8.x.239903.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="BlackCaiman: Jackson-module-jaxb-annotations-2.8.x.239584.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="BlackCaiman: Woodstox-Stax2-api-3.1.229126.0" level="project" />
+  </component>
+</module>

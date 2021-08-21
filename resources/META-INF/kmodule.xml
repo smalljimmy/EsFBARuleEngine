@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+    <kbase name="FBARuleEngine_NA" packages="com.amazon.oih.es.fba.ruleengine.rules.na" default="false">
+        <ksession name="fba_na" type="stateful"/>
+    </kbase>
+    <kbase name="FBARuleEngine_EU" packages="com.amazon.oih.es.fba.ruleengine.rules.eu" default="false">
+        <ksession name="fba_eu" type="stateful"/>
+    </kbase>
+    <kbase name="FBARuleEngine_FE" packages="com.amazon.oih.es.fba.ruleengine.rules.fe" default="false">
+        <ksession name="fba_fe" type="stateful"/>
+    </kbase>
+</kmodule>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<project name="EsFBARuleEngine-1.0" basedir="." default="release" xmlns:ht="happytrails">
+
+  <import file="${happytrails.root}/happytrails.xml" />
+
+  <property name="configuration.dir" location="${basedir}/configuration" />
+  <property name="checkstyle.failOnError" value="false"/>
+  <property name="findbugs.failOnError" value="false" />
+
+  <property name="tests.additional.jvmargs" value="-Ddrools.dialect.java.compiler=JANINO
+  -Dlog4j.configurationFile=${configuration.dir}/log-configuration/log4j2-test.xml
+  -Droot=${output.dir}"/>
+
+  <ht:import file="happier-kotlin-trails.xml" optional="false"/>
+
+  <property name="sources.kotlinc.extra.args" value="-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi -Xuse-experimental=kotlinx.coroutines.ObsoleteCoroutinesApi"/>
+
+  <ht:import file="jacoco.xml"/>
+  <ht:import file="ihr-sonar-qube.xml" />
+
+  <property name="coverage.additional.jvmargs" value="-Dlog4j.configurationFile=${configuration.dir}/log-configuration/log4j2-test.xml -Droot=${output.dir}"/>
+
+  <!-- Copy process manager config and apollo validation tests over -->
+  <target name="copy-configuration">
+    <copy todir="${output.dir}">
+      <fileset dir="${configuration.dir}">
+        <include name="brazil-config/**/*"/>
+      </fileset>
+    </copy>
+
+    <!-- Set up a private config area to support the 'server' target -->
+    <copy todir="${output.dir}/private">
+      <fileset dir="${bp:run.configfarm.brazil-config}">
+        <include name="brazil-config/**/*"/>
+      </fileset>
+    </copy>
+    <copy todir="${output.dir}/private">
+      <fileset dir="${bp:run.configfarm.certs}">
+        <include name="certs/**/*"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="standard-compile-jar" depends="compile" description="Build a jar">
+    <mkdir dir="${lib.dir}" />
+    <echo message="build jar: ${build.jar}" />
+    <jar destfile="${build.jar}">
+      <fileset dir="${classes.dir}" includes="**/*.class" />
+      <fileset dir="${classes.dir}" includes="**/*.drl" />
+      <metainf dir="${basedir}/resources/META-INF" includes="maven/**,*.xml" />
+    </jar>
+  </target>
+
+  <target name="standard-coverage"/>
+
+  <!-- Target to run a single integartion test instead of all of them. An example use
+          brazil-build single-test-integration -DtestClass=IntegrationTestClass
+ -->
+
+  <target name="build" depends="standard-build,copy-configuration"/>
+
+  <target name="dokka"/>
+
+</project>
